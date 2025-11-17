@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #00bcd4 0%, #a259e6 50%, #ff69b4 100%);
     display: flex;
     flex-direction: column;
@@ -87,6 +87,7 @@ body::after {
     font-size: 32px;
     color: #333;
     font-weight: normal;
+    font-style: italic;
 }
 
 .first-name-bold {

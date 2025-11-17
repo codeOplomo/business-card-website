@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome CDN for professional icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 </head>
 <body>
     <div class="card">
@@ -27,6 +29,9 @@
                 <button class="contact-btn" data-type="website" title="Website">
                     <i class="fa-solid fa-globe"></i>
                 </button>
+                <button class="contact-btn" data-type="linkedin" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </button>
             </div>
             <div class="contact-details" id="email-detail" style="display:none;">
                 <div style="display: flex; align-items: center; gap: 10px;">
@@ -35,7 +40,10 @@
                             <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8l8 5 8-5v10z"/>
                         </svg>
                     </span>
-                    <p style="margin: 0;"><strong>Email:</strong> <a href="mailto:mariam.wahibi@example.com">m.wahibi@in-talks.ma</a></p>
+                    <span style="display: flex; flex-direction: column; justify-content: center; gap: 2px;">
+                        <p style="margin: 0;"><strong>Email:</strong> <a href="mailto:mariam.wahibi@example.com">m.wahibi@in-talks.ma</a></p>
+                        <p style="margin: 0;"><strong>Email:</strong> <a href="mailto:m.wahibi@richmedia.ma">m.wahibi@richmedia.ma</a></p>
+                    </span>
                 </div>
             </div>
             <div class="contact-details" id="phone-detail" style="display:none;">
@@ -51,11 +59,19 @@
             <div class="contact-details" id="website-detail" style="display:none;">
                 <div style="display: flex; align-items: center; gap: 10px;">
                     <span style="display: flex; align-items: center;">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
-                        </svg>
+                        <i class="fa-solid fa-globe"></i>
                     </span>
                     <p style="margin: 0;"><strong>Website:</strong> <a href="https://www.mariamwahibi.com" target="_blank">www.in-talks.ma</a></p>
+                </div>
+            </div>
+            <div class="contact-details" id="linkedin-detail" style="display:none;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="display: flex; align-items: center;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </span>
+                    <p style="margin: 0;"><strong>LinkedIn:</strong> <a href="[linkedin-url]" target="_blank">[linkedin-url]</a></p>
                 </div>
             </div>
         </div>
@@ -63,18 +79,7 @@
             <p>[A short bio about yourself.]</p>
         </div>
     </div>
-        <div class="social">
-            <a href="[linkedin-url]" target="_blank" title="LinkedIn" class="social-link linkedin">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-            </a>
-            <a href="[instagram-url]" target="_blank" title="Instagram" class="social-link instagram" style="background-color: #c92c8a;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512" fill="currentColor">
-                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-36.8-9.9-69.2-36.2-95.5S361.8 8.6 325 6.9c-36.8-1.7-147.2-1.7-184 0-36.8 1.7-69.2 9.9-95.5 36.2S8.6 86.2 6.9 123c-1.7 36.8-1.7 147.2 0 184 1.7 36.8 9.9 69.2 36.2 95.5s58.7 34.5 95.5 36.2c36.8 1.7 147.2 1.7 184 0 36.8-1.7 69.2-9.9 95.5-36.2s34.5-58.7 36.2-95.5c1.7-36.8 1.7-147.2 0-184zm-48.5 224c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.5 9s-103.1 2.6-132.5-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.5s-2.6-103.1 9-132.5c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.5-9s103.1-2.6 132.5 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.5s2.6 103.1-9 132.5z"/>
-                </svg>
-            </a>
-        </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

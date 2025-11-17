@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const details = {
         email: document.getElementById('email-detail'),
         phone: document.getElementById('phone-detail'),
-        website: document.getElementById('website-detail')
+        website: document.getElementById('website-detail'),
+        linkedin: document.getElementById('linkedin-detail')
     };
     buttons.forEach(btn => {
         btn.addEventListener('click', function() {
