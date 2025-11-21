@@ -227,6 +227,10 @@ body::after {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+        overflow-x: hidden;
+    }
     .card {
         padding: 20px;
         max-width: 90%;
@@ -237,5 +241,25 @@ body::after {
     .profile-pic {
         width: 120px;
         height: 120px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .contact-buttons {
+        gap: 10px;
+    }
+    .contact-btn {
+        width: 70px;
+        height: 35px;
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+    .contact-details {
+        font-size: 14px;
+        padding: 12px 15px;
+        max-width: 100%;
+    }
+    body::before, body::after {
+        display: none;
     }
 }
